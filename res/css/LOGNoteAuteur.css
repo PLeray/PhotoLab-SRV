@@ -1,0 +1,140 @@
+/* HORS IMPRESSION */
+
+/* Style the top navigation bar */
+.topnav {
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	width: 20cm; /* largeur obligatoire pour être centré */	
+
+	overflow: hidden;
+	background-color: var(--boutonVert);
+}
+
+/* Style the topnav links */
+.topnav a {
+    float: left;
+    display: block;
+    color: var(--ligneTableauGrisClair);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+    background-color: var(--boutonRouge);
+    color: var(--ligneTableauGrisClair);
+}
+
+/* On screens that are 600px wide or less, make the menu links stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+
+/* CONTENU A IMPRIMER */
+
+body { /* Modifications : la couleur de fond de page - la police - l'unité utilisée pour la taille de la police  */
+	background-color : #ddd;
+	font-family:Arial;
+	font-size:9pt;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+}
+
+
+.facture {
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	width: 20cm; /* largeur obligatoire pour être centré */
+	background-color: #FFF;
+	min-height: 27cm;
+	border:1px solid #CFCFCF;	
+}
+
+.listecommande {
+	top: 4.5cm; 
+	position: relative;
+	margin-left: 1cm;
+  margin-right: 1cm; 
+	}
+
+.zoneEntete {
+    position: absolute; 
+	font-size:8pt;
+	top: 0.5cm;
+    left: 0.5cm;
+}
+.zoneNumFacture {
+    position: absolute; 
+	top: 0cm;
+    right: 0.5cm;
+	width: 10cm;
+	text-align: right;
+	font-size:8pt;
+}
+.zoneDestinataire {
+    position: absolute;
+	top: 2.5cm;
+    left: 2.5cm;
+}
+
+.zoneTotal {
+	font-family:Arial;
+	font-size:12pt;
+    margin-right:  1.3cm;
+	text-align: right;
+    margin-top:  0.5cm;
+}
+.zoneAdministration {
+	text-align: justify;
+	font-size:7pt;
+}
+
+#myTable {
+	border-collapse: collapse;
+	/*border: 1px solid var(--ligneTableauGrisFonce);*/
+	font-size: 8pt;
+}
+
+#myTable th, #myTable td {
+  padding-left: 0.3cm ;
+  padding-right: 0.3cm ;  
+  border-bottom: 1px solid #ddd;  
+}
+
+#myTable tr {
+  border-bottom: 1px solid var(--ligneTableauGrisFonce);
+}
+
+#myTable tr.header   {
+	margin: 10px;
+	vertical-align : middle;
+	background-color: var(--ligneTableauGrisClair); /*var(--boutonVert);*/
+	color: black;
+}
+
+#myTable tr:nth-child(1) {
+    text-align: left;
+}
+#myTable tr:nth-child(2) {
+    text-align: center;
+}
+#myTable tr:nth-child(3) {
+    text-align: right;
+}
+
+#myTable td:nth-child(1) {
+    text-align: left;
+}
+#myTable td:nth-child(2) {
+    text-align: center;
+}
+#myTable td:nth-child(3) {
+    text-align: right;
+}

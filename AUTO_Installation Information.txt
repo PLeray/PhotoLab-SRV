@@ -1,0 +1,31 @@
+
+
+Dans PhotoLab/code/res/index.php
+
+if( $GLOBALS['VERSIONLOCAL'] < $_GET['versionDistante']){
+
+$VERSIONLOCAL = 0.81; Dans APIConnexion.php (local)  <  $VERSIONSERVEUR = 0.81; Dans BDDInit.php (Serveur)
+
+Si c'est le cas redirection vers MAJ.php qui va télécharger code.zip qui est sur 
+
+(Serveur)/installation/PhotoLab/
+
+
+Pour faire un Maj : 
+
+Modifier valeur $VERSIONSERVEUR = 0.81; Dans BDDInit.php (Serveur)
+
+Faire un nouveau  APIConnexion.php (local) avec $VERSIONLOCAL > 0.81; 
+
+Lancer Script a la racine CopyFichierInstallation.php pour 
+	- Copier tout les nouveaux fichier dans (Serveur)/installation/PhotoLab/Code/
+	- Faire un nouveau code.zip 
+
+tester http://localhost/API_photolab/installation/PhotoLab/Code/
+
+et puis sur : http://localhost/Test-Installation-PhotoLab/PhotoLab
+
+uploader sur 'https://photolab-site.fr/installation/PhotoLab/Code/
+
+
+

@@ -1,0 +1,72 @@
+.logo {
+  position: absolute;
+  left: 8px;
+  Top: 0px;
+
+}
+.titreMenu {
+
+  display:inline-flex;
+
+  margin-top: 110px;
+
+  color: var(--texteGris);
+
+font-size: 10px;
+  text-align: center;
+  z-index:5;
+}
+
+#mySidenav a {
+  position: relative;
+  display:inline-block;
+  top: -40px;
+  transition: 0.8s;
+
+  height: 110px;
+  width: 110px;
+
+  margin: 5px ;
+  margin-bottom: 20px ;
+
+  text-decoration : none;
+  text-align: center;
+  z-index:5;
+}
+
+#mySidenav a:hover {
+  top: -13px;
+}
+
+
+#mySidenav a.actif {    
+  top: -13px;
+
+  border-radius: 60px;
+  background-color: var(--FondsurvolLigneTab);
+}
+
+
+#ajoutCommandeGroupee {
+  background: url('../img/menuBouton0.png') no-repeat center;
+}
+
+#sourcePhotos {
+  background: url('../img/menuBouton1.png') no-repeat center;
+}
+
+#listeCatalogues {
+  background: url('../img/menuBouton5.png') no-repeat center;
+}
+
+#commandesEnCours {
+  background: url('../img/menuBouton2.png') no-repeat center;
+}
+
+#commandesExpediees {
+  background: url('../img/menuBouton3.png') no-repeat center;
+}
+
+#administration {
+  background: url('../img/menuBouton4.png') no-repeat center;
+}
